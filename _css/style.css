@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(37, 87, 137);
+}
+
+main {
+    min-height: 100dvh;
+    min-width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 3em;
+    width: 60%;
+    background-color: #ffffff;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn-cadastrar {
+    font-weight: 500;
+    border-radius: 20px;
+    border: 3px solid rgb(37, 87, 137);
+    margin-top: 1em;
+    background-color: rgb(37, 87, 137);
+    transition: all .3s ease-in-out;
+}
+
+.btn-cadastrar:hover {
+    color: rgb(37, 87, 137);
+    background-color: rgb(255, 255, 255);
+}
+
+input:focus {
+    background-color: #e4e4e4;
+}
