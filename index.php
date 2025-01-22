@@ -1,3 +1,5 @@
+<?php include_once "_controller/listar-produtos.php"; ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -19,23 +21,17 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Valor</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Valor</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td scope="row">Algum nome</td>
-                            <td class="name">R$100,00</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">Algum nome</td>
-                            <td class="name">R$100,00</td>
-                        </tr>
-                        <tr>
-                            <td scope="row">Algum nome</td>
-                            <td class="name">R$100,00</td>
-                        </tr>
+                        <?php foreach($produtos as $p): ?>
+                            <tr>
+                                <td><?= $p['nome']?></td>
+                                <td>R$<?= $p['valor']?></td>
+                            </tr>
+                        <?php endforeach; ?>
                     </tbody>
                 </table>
             </div>

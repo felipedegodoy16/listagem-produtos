@@ -2,6 +2,7 @@
 
     include_once "../_class/ProdutoDAO.php";
 
+    //  Criando o produto
     $produto = new Produto();
 
     $produto->setNome($_POST['nome']);
@@ -9,4 +10,9 @@
     $produto->setValor(str_replace(",", ".", $_POST['valor']));
     $produto->setDisp($_POST['options']);
 
-    var_dump($produto);
+    // Criando o produtoDAO
+    $produtoDAO = new ProdutoDAO($produto);
+
+    $produtoDAO->inserir();
+
+    header('Location: ../index.php');
