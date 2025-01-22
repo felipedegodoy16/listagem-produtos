@@ -3,8 +3,8 @@
     class Produto{
         private string $nome;
         private string $descricao;
-        private int $valor;
-        private bool $disp;
+        private float $valor;
+        private string $disp;
 
         // Getters and Setters
         public function getNome() {

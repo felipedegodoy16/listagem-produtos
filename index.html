@@ -13,36 +13,34 @@
   </head>
   <body>
     <main>
-        <form action="gravar-produto.php" method="post">
-            <h1 style="text-align: center;">Cadastrar Produto</h1>
-            <div class="form-group">
-                <label for="id_nome">Nome:</label>
-                <input class="form-control" type="text" name="nome" id="id_nome">
+        <div style="width: 80%;">
+            <h1 class="title-index">Todos os Produtos</h1>
+            <div class="table-responsive" style="text-transform: uppercase; margin-bottom: 2em;">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">Algum nome</td>
+                            <td class="name">R$100,00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Algum nome</td>
+                            <td class="name">R$100,00</td>
+                        </tr>
+                        <tr>
+                            <td scope="row">Algum nome</td>
+                            <td class="name">R$100,00</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="form-group">
-                <label for="id_desc">Descrição:</label>
-                <textarea class="form-control" name="desc" id="id_desc" rows="3"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="id_valor">Valor:</label>
-                <input class="form-control" type="text" name="valor" id="id_valor">
-            </div>
-            <div>
-                <label>Disponível para Venda:</label>
-                <div class="form-check d-flex">
-                    <div>
-                        <input class="form-check-input" type="radio" name="options" id="id_option1" value="disp" checked>
-                        <label class="form-check-label" for="id_option1">Sim</label>
-                    </div>
-                    <div style="margin-left: 2em;">
-                        <input class="form-check-input" type="radio" name="options" id="id_option2" value="disp">
-                        <label class="form-check-label" for="id_option2">Não</label>
-                    </div>
-                </div>
-                
-            </div>
-            <button type="submit" class="btn btn-primary btn-cadastrar">Cadastrar</button>
-        </form>
+        </div>
+        <a class="link-cadastro" href="cadastro.html">Cadastrar</a>
     </main>
 
     <!-- JavaScript (Opcional) -->

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="_css/style.css">
 
-    <title>Listagem</title>
+    <title>Cadastrar</title>
   </head>
-  <body>
-    <main>
+  <body class="body-cadastro">
+    <main class="main-cadastro">
         <form action="_controller/gravar-produto.php" method="post">
             <h1 style="text-align: center;">Cadastrar Produto</h1>
             <div class="form-group">
@@ -31,11 +31,11 @@
                 <label>Disponível para Venda:</label>
                 <div class="form-check d-flex">
                     <div>
-                        <input class="form-check-input" type="radio" name="options" id="id_option1" value="dispS" checked>
+                        <input class="form-check-input" type="radio" name="options" id="id_option1" value="S" checked>
                         <label class="form-check-label" for="id_option1">Sim</label>
                     </div>
                     <div style="margin-left: 2em;">
-                        <input class="form-check-input" type="radio" name="options" id="id_option2" value="dispN">
+                        <input class="form-check-input" type="radio" name="options" id="id_option2" value="N">
                         <label class="form-check-label" for="id_option2">Não</label>
                     </div>
                 </div>

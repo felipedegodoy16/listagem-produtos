@@ -1,18 +1,12 @@
 <?php 
 
-    include_once "../_class/Produto.php";
+    include_once "../_class/ProdutoDAO.php";
 
     $produto = new Produto();
 
     $produto->setNome($_POST['nome']);
     $produto->setDescricao($_POST['desc']);
-    $produto->setValor($_POST['valor']);
-    if($_POST['options'] === 'Sim') {
-        $produto->setDisp(true);
-    } else {
-        $produto->setDisp(false);
-    }
+    $produto->setValor(str_replace(",", ".", $_POST['valor']));
+    $produto->setDisp($_POST['options']);
 
     var_dump($produto);
-    
-?>

@@ -1,13 +1,10 @@
-body {
+.body-cadastro {
+    align-items: center !important;
     background-color: rgb(37, 87, 137);
 }
 
-main {
-    min-height: 100dvh;
-    min-width: 100dvw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-cadastro {
+    align-items: center !important;
 }
 
 form {
@@ -35,4 +32,47 @@ form {
 
 input:focus {
     background-color: #e4e4e4;
+}
+
+/* Index */
+
+main {
+    min-height: 100dvh;
+    min-width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.body-index {
+    min-height: 100dvh;
+    min-width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.title-index {
+    text-align: center;
+    padding: 1em 0;
+}
+
+a.link-cadastro {
+    font-weight: 500;
+    text-decoration: none;
+    position: fixed;
+    z-index: 1001;
+    padding: 10px;
+    right: 1.5em;
+    bottom: 1.5em;
+    background-color: rgb(37, 87, 137);
+    border: 3px solid rgb(37, 87, 137);
+    color: #FFF;
+    border-radius: 30px;
+    transition: all .3s ease-in-out;
+}
+
+a.link-cadastro:hover {
+    background-color: #FFF;
+    color: rgb(37, 87, 137);
 }
