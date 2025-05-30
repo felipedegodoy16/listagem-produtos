@@ -1,21 +1,45 @@
-# Projeto Listagem de Produtos
+# Sistema de Cadastro e Listagem de Produtos 🛒
 
-Projeto simples com o intuito de fazer um pequeno cadastro de produtos e listá-los, obedecendo se os mesmos estão disponíveis para venda e os listando a partir do valor.
+Este projeto é uma aplicação web simples e funcional desenvolvida com o objetivo de realizar o **cadastro** e **listagem de produtos**, oferecendo uma interface amigável para gerenciamento de itens.
 
----
+## 🚀 Tecnologias Utilizadas
 
-Link do meu [github](https://github.com/felipedegodoy16) com mais projetos como esse.
+O sistema foi desenvolvido utilizando as seguintes tecnologias:
 
----
+- **PHP**: Lógica de back-end, manipulação de dados e integração com banco de dados.
+- **HTML**: Estruturação da interface do usuário.
+- **CSS**: Estilização da página com foco em simplicidade e responsividade.
+- **JavaScript**: Validações, interatividade e dinamismo no front-end.
+- **MySQL**: Armazenamento das informações em um Banco de Dados.
 
-### Instruções para uso do sistema
+## 🎯 Funcionalidades
 
- Para conseguir rodar o projeto em sua máquina siga as seguintes etapas:
+- Cadastro de produtos com nome, descrição, valor e disponibilidade de venda.
+- Validação de campos no front-end com JavaScript.
+- Armazenamento e recuperação dos dados com PHP.
+- Exibição de produtos cadastrados em uma tabela organizada.
+- Feedback visual ao usuário sobre o status das ações.
 
- - Tenha o XAMPP instalado ou algum outro software que permita que sua máquina se torne um servidor Apache com suporte a MySQL;
- - Faça o download do projeto em sua máquina;
- - Extraia o arquivo .zip que será baixado;
- - Copie a pasta extraída para o caminho no qual você possa acessar através do servidor Apache instalado, no caso do XAMPP 'C:\xampp\htdocs';
- - Abra o servidor de Banco de Dados do seu servidor local e importe o arquivo sql que se encontra na pasta '_sql';
- - E está feito;
- - Tire bons proveitos de meu software.
+## 📦 Como Executar o Projeto
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/felipedegodoy16/listagem-produtos
+   ```
+
+2. Coloque os arquivos em um servidor local (como XAMPP, WAMP ou Laragon) na pasta `htdocs`.
+
+3. Acesse no navegador:
+   ```bash
+   http://localhost/listagem-produtos
+   ```
+
+## 📝 Requisitos
+
+- PHP 7+ instalado
+- Navegador moderno
+- Servidor local (XAMPP, WAMP, etc.)
+
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT. Sinta-se livre para usar, modificar e compartilhar!
